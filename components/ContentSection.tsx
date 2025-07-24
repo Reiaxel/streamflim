@@ -3,7 +3,10 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import ContentCard from './ContentCard';
-import type { Content } from '@/lib/data';
+import type { Content } from '../lib/api';
+
+
+
 
 interface ContentSectionProps {
   title: string;
