@@ -8,10 +8,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "image.tmdb.org",
+        hostname: "image.tmdb.org", // dominio de las imágenes de TMDB
       },
     ],
   },
 };
 
 module.exports = nextConfig;
+
