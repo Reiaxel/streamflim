@@ -1,5 +1,6 @@
 'use client';
 
+import Image from "next/image";
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
@@ -77,11 +78,15 @@ export default function DetailsPage() {
         {/* Hero Section */}
         <div className="relative min-h-[70vh] flex items-end">
           <div className="absolute inset-0">
-            <img
-              src={content.image}
-              alt={content.title}
-              className="w-full h-full object-cover"
-            />
+            <div className="relative w-full h-full">
+              <Image
+                src={content.image}
+                alt={content.title}
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           </div>
           
